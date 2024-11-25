@@ -14,69 +14,45 @@ let boxTarget7 = document.getElementById("boxTarget7");
 let boxTarget8 = document.getElementById("boxTarget8");
 
 const validColors = ["red", "blue", "purple", "brown", "yellow"];
-let userInputColor;
-let userInputBox;
+let userInputColor = "";
+let userInputBox = 0;
 
 // Functions
 
 changeColorBtn.addEventListener("click", function () {
-  switch (userInputColor) {
-    case 1:
-      userInputColor = "red";
-      break;
-    case 2:
-      userInputColor = "blue";
-      break;
-    case 2:
-      userInputColor = "purple";
-      break;
-    case 2:
-      userInputColor = "brown";
-      break;
-    case 2:
-      userInputColor = "yellow";
-      break;
-    default:
-      alert("Please Enter a valid color");
-      break;
-  }
+    userInputColor = changeColor.value;
+    userInputColorcolor = userInputColor.toLowerCase();
+    userInputBox = boxNumber.value; 
 
-  switch (userInputBox) {
-    case 1:
-      userInputBox = "1";
-      boxTarget.style.backgroundColor = userInputColor;
-      break;
-    case 2:
-      userInputBox = "2";
-      boxTarget2.style.backgroundColor = userInputColor;
-      break;
-    case 3:
-      userInputBox = "3";
-      boxTarget3.style.backgroundColor = userInputColor;
-      break;
-    case 4:
-      userInputBox = "4";
-      boxTarget4.style.backgroundColor = userInputColor;
-      break;
-    case 5:
-      userInputBox = "5";
-      boxTarget5.style.backgroundColor = userInputColor;
-      break;
-    case 6:
-      userInputBox = "6";
-      boxTarget6.style.backgroundColor = userInputColor;
-      break;
-    case 7:
-      userInputBox = "7";
-      boxTarget7.style.backgroundColor = userInputColor;
-      break;
-    case 8:
-      userInputBox = "8";
-      boxTarget8.style.backgroundColor = userInputColor;
-      break;
-    default:
-      alert("invalid");
-      break;
+    switch(userInputBox){
+        case "1":
+            boxTarget1;
+            break
+        case "2":
+            boxTarget2;
+            break
+        case "3":
+            boxTarget3;
+            break
+        case "4":
+            boxTarget4;
+            break
+        case "5":
+            boxTarget5;
+            break
+        case "6":
+            boxTarget6;
+            break
+        case "7":
+            boxTarget7;
+            break
+        case "8":
+            boxTarget8;
+            break
+        default:
+            alert("Choose a box 1-8");
+            break;
+
   }
 });
 
