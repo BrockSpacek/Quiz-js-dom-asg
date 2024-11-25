@@ -26,7 +26,7 @@ changeColorBtn.addEventListener("click", function () {
 
     switch(userInputBox){
         case "1":
-            boxTarget1;
+            boxTarget;
             break
         case "2":
             boxTarget2;
@@ -59,7 +59,7 @@ changeColorBtn.addEventListener("click", function () {
 function boxColor(userInputColor){
     switch(userInputColor){
         case "red":
-        
+            
         case "blue":
             
         case "purple":
@@ -70,21 +70,21 @@ function boxColor(userInputColor){
             
         default:
             
+            
     }
+}
 
-changeColor.addEventListener("keypress", (e) => {
-  if (event.key === "Enter") {
-    userInputColor = changeColor.value;
-    console.log(userInputColor);
-  }
-});
-
-boxNumber.addEventListener("keypress", (e) => {
-  if (event.key === "Enter") {
-    userInputBox = boxNumber.value;
-    console.log(userInputBox);
-  }
-});
+resetBtn.addEventListener("click", function(){
+    boxTarget
+    boxTarget2
+    boxTarget3
+    boxTarget4
+    boxTarget5
+    boxTarget6
+    boxTarget7
+    boxTarget8
+ 
+})
 
 /*
 
