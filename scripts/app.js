@@ -16,6 +16,8 @@ let boxTarget8 = document.getElementById("boxTarget8");
 const validColors = ["red", "blue", "purple", "brown", "yellow"];
 let userInputColor;
 let userInputBox;
+let colorArray = [];
+let boxArray = [];
 
 // Functions
 
@@ -49,11 +51,28 @@ changeColorBtn.addEventListener("click", function () {
   */
 });
 
+changeColor.addEventListener('keypress', (e)=>{
+    if(event.key === 'Enter'){
+      userInputColor = changeColor.value
+      console.log(userInputColor)
 
+      if(userInputColor){
+        colorArray.push(userInputColor);
+      }
+      console.log(colorArray)
+    }
+});
 
-resetBoxBtn.addEventListener('click', fucntion() {
-    userInputColor = "",
-    userInputBox = ""
+boxNumber.addEventListener('keypress', (e)=>{
+    if(event.key === 'Enter'){
+      userInputBox = boxNumber.value
+      console.log(userInputBox)
+
+      if(userInputBox){
+        boxArray.push(userInputBox);
+      }
+      console.log(boxArray)
+    }
 });
 
 changeColorBtn.addEventListener("click", function () {
