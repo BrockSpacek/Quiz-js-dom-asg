@@ -14,30 +14,48 @@ let boxTarget7 = document.getElementById("boxTarget7");
 let boxTarget8 = document.getElementById("boxTarget8");
 
 const validColors = ["red", "blue", "purple", "brown", "yellow"];
+let userInputColor;
+let userInputBox;
 
 // Functions
 
 changeColorBtn.addEventListener("click", function () {
-  for (let i = 0; i < validColors.length; i++) {
-    if (
-      changeColor != "red" ||
-      changeColor != "blue" ||
-      changeColor != "purple" ||
-      changeColor != "brownn" ||
-      changeColor != "yellow"
-    ) {
-      changecolor = "";
+  switch (color) {
+    case 1:
+      userInputColor = "red";
+      break;
+    case 2:
+      userInputColor = "blue";
+      break;
+    case 2:
+      userInputColor = "purple";
+      break;
+    case 2:
+      userInputColor = "brown";
+      break;
+    case 2:
+      userInputColor = "yellow";
+      break;
+    default: 
+        alert("Please Enter a valid color");
+        break;
+  }
 
-
-    } else {
+     /*{
       document.getElementById(
         "boxTarget"
       ).style.backgroundColor = `${changeColor}`;
     }
-  }
+  */
 });
 
 
-changeColorBtn.addEventListener("click", function() {
-    document.getElementById("boxTarget2").style.backgroundColor = "lightblue";
-  });
+
+resetBoxBtn.addEventListener('click', fucntion() {
+    userInputColor = "",
+    userInputBox = ""
+});
+
+changeColorBtn.addEventListener("click", function () {
+  boxTarget2.style.backgroundColor = "lightblue";
+});
