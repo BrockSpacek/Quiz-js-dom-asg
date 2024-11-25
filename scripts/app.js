@@ -27,7 +27,7 @@ let userInputBox = 0;
 
 changeColorBtn.addEventListener("click", function () {
     userInputColor = changeColor.value;
-    userInputColorcolor = userInputColor.toLowerCase();
+    userInputColor = userInputColor.toLowerCase();
     userInputBox = boxNumber.value; 
 
     switch(userInputBox){
