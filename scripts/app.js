@@ -1,3 +1,9 @@
+// Input a number 1-8 to choose a box 
+// Input a color from the 5 colors given to add it to the box
+// Make change color button have a function that when the button is clicked, it takes in the user's number input and color input
+// Using those inputs, the box that is tied to the number will have its background color changed to the user's inputed color by changing the css class.
+
+
 // ID elements
 
 let boxNumber = document.getElementById("boxNumber");
@@ -26,28 +32,28 @@ changeColorBtn.addEventListener("click", function () {
 
     switch(userInputBox){
         case "1":
-            boxTarget;
+            boxTarget.className = userInputColor + " col-3 text-center boxSize";
             break
         case "2":
-            boxTarget2;
+            boxTarget2.className = userInputColor + " col-3 text-center boxSize";
             break
         case "3":
-            boxTarget3;
+            boxTarget3.className = userInputColor + " col-3 text-center boxSize";
             break
         case "4":
-            boxTarget4;
+            boxTarget4.className = userInputColor + " col-3 text-center boxSize";
             break
         case "5":
-            boxTarget5;
+            boxTarget5.className = userInputColor + " col-3 text-center boxSize";
             break
         case "6":
-            boxTarget6;
+            boxTarget6.className = userInputColor + " col-3 text-center boxSize";
             break
         case "7":
-            boxTarget7;
+            boxTarget7.className = userInputColor + " col-3 text-center boxSize";
             break
         case "8":
-            boxTarget8;
+            boxTarget8.className = userInputColor + " col-3 text-center boxSize";
             break
         default:
             alert("Choose a box 1-8");
@@ -56,40 +62,20 @@ changeColorBtn.addEventListener("click", function () {
   }
 });
 
-function boxColor(userInputColor){
-    switch(userInputColor){
-        case "red":
-            
-        case "blue":
-            
-        case "purple":
-            
-        case "brown":
-        
-        case "yellow":
-            
-        default:
-            
-            
-    }
-}
 
-resetBtn.addEventListener("click", function(){
-    boxTarget
-    boxTarget2
-    boxTarget3
-    boxTarget4
-    boxTarget5
-    boxTarget6
-    boxTarget7
-    boxTarget8
+
+
+resetBoxBtn.addEventListener("click", function(){
+    boxTarget.className = "col-3 text-center boxSize";
+    boxTarget2.className = "col-3 text-center boxSize";
+    boxTarget3.className = "col-3 text-center boxSize";
+    boxTarget4.className = "col-3 text-center boxSize";
+    boxTarget5.className = "col-3 text-center boxSize";
+    boxTarget6.className = "col-3 text-center boxSize";
+    boxTarget7.className = "col-3 text-center boxSize";
+    boxTarget8.className = "col-3 text-center boxSize";
+
  
-})
-
-/*
-
-changeColorBtn.addEventListener("click", function () {
-  boxTarget2.style.backgroundColor = "lightblue";
 });
 
-*/
+
