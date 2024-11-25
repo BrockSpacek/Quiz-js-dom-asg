@@ -16,13 +16,11 @@ let boxTarget8 = document.getElementById("boxTarget8");
 const validColors = ["red", "blue", "purple", "brown", "yellow"];
 let userInputColor;
 let userInputBox;
-let colorArray = [];
-let boxArray = [];
 
 // Functions
 
 changeColorBtn.addEventListener("click", function () {
-  switch (color) {
+  switch (userInputColor) {
     case 1:
       userInputColor = "red";
       break;
@@ -38,43 +36,68 @@ changeColorBtn.addEventListener("click", function () {
     case 2:
       userInputColor = "yellow";
       break;
-    default: 
-        alert("Please Enter a valid color");
-        break;
+    default:
+      alert("Please Enter a valid color");
+      break;
   }
 
-     /*{
-      document.getElementById(
-        "boxTarget"
-      ).style.backgroundColor = `${changeColor}`;
-    }
-  */
+  switch (userInputBox) {
+    case 1:
+      userInputBox = "1";
+      boxTarget.style.backgroundColor = userInputColor;
+      break;
+    case 2:
+      userInputBox = "2";
+      boxTarget2.style.backgroundColor = userInputColor;
+      break;
+    case 3:
+      userInputBox = "3";
+      boxTarget3.style.backgroundColor = userInputColor;
+      break;
+    case 4:
+      userInputBox = "4";
+      boxTarget4.style.backgroundColor = userInputColor;
+      break;
+    case 5:
+      userInputBox = "5";
+      boxTarget5.style.backgroundColor = userInputColor;
+      break;
+    case 6:
+      userInputBox = "6";
+      boxTarget6.style.backgroundColor = userInputColor;
+      break;
+    case 7:
+      userInputBox = "7";
+      boxTarget7.style.backgroundColor = userInputColor;
+      break;
+    case 8:
+      userInputBox = "8";
+      boxTarget8.style.backgroundColor = userInputColor;
+      break;
+    default:
+      alert("invalid");
+      break;
+  }
 });
 
-changeColor.addEventListener('keypress', (e)=>{
-    if(event.key === 'Enter'){
-      userInputColor = changeColor.value
-      console.log(userInputColor)
-
-      if(userInputColor){
-        colorArray.push(userInputColor);
-      }
-      console.log(colorArray)
-    }
+changeColor.addEventListener("keypress", (e) => {
+  if (event.key === "Enter") {
+    userInputColor = changeColor.value;
+    console.log(userInputColor);
+  }
 });
 
-boxNumber.addEventListener('keypress', (e)=>{
-    if(event.key === 'Enter'){
-      userInputBox = boxNumber.value
-      console.log(userInputBox)
-
-      if(userInputBox){
-        boxArray.push(userInputBox);
-      }
-      console.log(boxArray)
-    }
+boxNumber.addEventListener("keypress", (e) => {
+  if (event.key === "Enter") {
+    userInputBox = boxNumber.value;
+    console.log(userInputBox);
+  }
 });
+
+/*
 
 changeColorBtn.addEventListener("click", function () {
   boxTarget2.style.backgroundColor = "lightblue";
 });
+
+*/
