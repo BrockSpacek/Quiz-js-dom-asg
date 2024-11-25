@@ -56,6 +56,22 @@ changeColorBtn.addEventListener("click", function () {
   }
 });
 
+function boxColor(userInputColor){
+    switch(userInputColor){
+        case "red":
+        
+        case "blue":
+            
+        case "purple":
+            
+        case "brown":
+        
+        case "yellow":
+            
+        default:
+            
+    }
+
 changeColor.addEventListener("keypress", (e) => {
   if (event.key === "Enter") {
     userInputColor = changeColor.value;
